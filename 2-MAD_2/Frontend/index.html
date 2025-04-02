@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router@3/dist/vue-router.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app"></div>
+    <!-- Load components first -->
+    <script src="{{ url_for('static', filename='components/Home.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/Login.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/Navbar.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/Footer.js') }}"></script> 
+    <script src="{{ url_for('static', filename='components/RegisterCustomer.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/RegisterProfessional.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/AdminNavbar.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/AdminDashboard.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/AdminServices.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/AdminAllUser.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/AdminProfApprove.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/AdminDownload.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/AdminPerformance.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/AdminBookings.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/AdminSearchBookings.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/ProfessionalNavbar.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/ProfessionalDashboard.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/ProfessionalProfile.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/ProfessionalUnassigned.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/ProfessionalAssigned.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/CustomerNavbar.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/CustomerDashboard.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/CustomerProfile.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/CustomerBookings.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/CustomerRatings.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/CustomerNewBookings.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/About.js') }}"></script>
+
+
+    <!-- Load main.js after all components -->
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
